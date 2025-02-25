@@ -1,5 +1,26 @@
+@font-face {
+  /* ① ここにfont-familyで指定したい名前を書く*/
+  font-family: "Futura-Bol";
+  /* フォントが置かれているパスを書く */
+  src: url("../fonts/Futura-Bol.ttf") format("truetype");
+}
+
+@font-face {
+  /* ① ここにfont-familyで指定したい名前を書く*/
+  font-family: "Futura-Boo";
+  /* フォントが置かれているパスを書く */
+  src: url("../fonts/Futura-Boo.ttf") format("truetype");
+}
+
+@font-face {
+  /* ① ここにfont-familyで指定したい名前を書く*/
+  font-family: "Futura-Obl";
+  /* フォントが置かれているパスを書く */
+  src: url("../fonts/Futura-BooObl.ttf") format("truetype");
+}
+
 body {
-  font-family: "Futura-Bol", "Futura-Boo", "Futura-Obl", sans-serif;
+  font-family: "Futura-Boo", "Futura-Obl", "Futura-Bol", sans-serif;
   font-size: 15px;
   letter-spacing: 0.05em;
   color: #333;
@@ -19,7 +40,7 @@ img {
 button {
   color: #fff;
   border-radius: 30%;
-  background: #445fd3;
+  background: #ff00d0;
   margin: 4px auto;
   text-align: center;
   display: block;
@@ -60,13 +81,14 @@ button :hover {
  見出し
 ---------------------------------*/
 .title {
-  font-size: 34px;
+  font-size: 42px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: 0.05em;
   color: #445fd3;
+  font-family: "Futura-Bol";
 }
 
 .lead {
@@ -91,7 +113,7 @@ button :hover {
   position: absolute;
   top: 0;
   right: 0;
-  padding-right: 32px;
+  padding-right: 40px;
   padding-top: 32px;
 }
 
@@ -100,8 +122,9 @@ button :hover {
 }
 
 .gnav-item a {
-  font-size: 16px;
+  font-size: 24px;
   display: inline-block;
+  font-family: "Futura-Boo";
   padding: 5px 0;
   transition: 0.5s;
   letter-spacing: 0.05em;
@@ -134,6 +157,7 @@ button :hover {
   transform: translateY(-50%) translateX(-50%);
 }
 .subtitle {
+  font-family: "Futura-Obl";
   font-size: 32px;
   line-height: 1;
   padding: 32px;
@@ -151,6 +175,7 @@ button :hover {
 
 .int-item {
   width: 100%;
+  font-family: nomal;
   color: #333;
   display: flex;
   gap: 8px;
@@ -205,11 +230,11 @@ button :hover {
 }
 
 .button-int01:hover {
-  box-shadow: 0px 0px 5px #353535;
+  box-shadow: 0px 0px 8px rgb(0 0 0 /50%);
 }
 
 .button-int02:hover {
-  box-shadow: 0px 0px 5px #353535;
+  box-shadow: 0px 0px 8px rgb(0 0 0 /50%);
 }
 
 .reverse {
@@ -222,7 +247,23 @@ button :hover {
 
 .cources {
   background-color: #d9e5f7;
+  position: relative;
+  width: 100vw;
+  z-index: 1;
 }
+
+#cources-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .cources-list {
   display: flex;
   flex-wrap: wrap;
@@ -232,7 +273,7 @@ button :hover {
 
 .cources-item {
   width: 200px;
-  padding: 16px;
+  padding: 0px, 16px, 16px, 16px;
   margin: 8px;
   text-align: center;
   background-color: #fff;
@@ -250,6 +291,7 @@ button :hover {
 }
 
 .cources-name {
+  font-family: nomal;
   margin-bottom: 10px;
 }
 
@@ -264,14 +306,127 @@ button :hover {
   width: 144px;
   padding: 12px;
   font-size: 12px;
+  margin-bottom: 12px;
 }
 
+.cources02-button {
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #57a7da;
+  margin: 6px auto;
+  text-align: center;
+  display: block;
+  width: 144px;
+  padding: 12px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.cources03-button {
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #333333;
+  margin: 6px auto;
+  text-align: center;
+  display: block;
+  width: 144px;
+  padding: 12px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.cources04-button {
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #ea5f59;
+  margin: 6px auto;
+  text-align: center;
+  display: block;
+  width: 144px;
+  padding: 12px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.cources05-button {
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #f7d749;
+  margin: 6px auto;
+  text-align: center;
+  display: block;
+  width: 144px;
+  padding: 12px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.cources06-button {
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #eb7c47;
+  margin: 6px auto;
+  text-align: center;
+  display: block;
+  width: 144px;
+  padding: 12px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.cources07-button {
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #8bccdb;
+  margin: 6px auto;
+  text-align: center;
+  display: block;
+  width: 144px;
+  padding: 12px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.cources01-button:hover {
+  box-shadow: 0px 0px 8px rgb(0 0 0 /50%);
+}
+
+.cources02-button:hover {
+  box-shadow: 0px 0px 8px rgb(0 0 0 /50%);
+}
+
+.cources03-button:hover {
+  box-shadow: 0px 0px 8px rgb(0 0 0 /50%);
+}
+
+.cources04-button:hover {
+  box-shadow: 0px 0px 8px rgb(0 0 0 /50%);
+}
+
+.cources05-button:hover {
+  box-shadow: 0px 0px 8px rgb(0 0 0 /50%);
+}
+
+.cources06-button:hover {
+  box-shadow: 0px 0px 8px rgb(0 0 0 /50%);
+}
+
+.cources07-button:hover {
+  box-shadow: 0px 0px 8px rgb(0 0 0 /50%);
+}
 /*--------------------------------
  images
 ---------------------------------*/
 
 .slider {
   width: 100%;
+  color: #333;
 }
 
 /*--------------------------------
@@ -311,7 +466,7 @@ button :hover {
 
   /* 見出し */
   .title {
-    font-size: 26px;
+    font-size: 32px;
     margin-bottom: 20px;
   }
 
@@ -338,39 +493,24 @@ button :hover {
   .header .container {
     padding: 15px;
   }
-
-  .header-logo {
-    font-size: 15px;
-    margin-right: 15px;
-  }
-
-  .gnav-item:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  .gnav-item a {
-    font-size: 10px;
-  }
-
-  .gnav-item a:after {
+  .gnav-list {
     display: none;
   }
 
   /*  メインビジュアル */
   .mv {
-    height: 75vh;
+    height: 100vh;
   }
 
   .mv-container {
     padding: 0 20px;
   }
 
-  .mv-title {
-    font-size: 30px;
+  .h1 {
+    width: 20vw;
   }
-  .mv-subtitle {
-    font-size: 16px;
-    margin-bottom: 20px;
+  .subtitle {
+    font-size: 24px;
   }
 
   .mv-text {
@@ -378,90 +518,23 @@ button :hover {
     line-height: 1.7;
   }
 
-  /* Works */
-  .works-name {
-    font-size: 12px;
-  }
+  /* introdction */
 
-  .works-info {
-    margin-top: 3px;
-  }
-
-  .works-list {
-    justify-content: space-between;
-  }
-
-  .works-item {
-    flex: 0 0 48%;
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
-
-  /* Skill */
-  .skill-list {
+  .int-item {
     display: block;
-    margin-bottom: 0;
   }
 
-  .skill-item {
+  .int-info {
     width: 100%;
-    margin-bottom: 35px;
   }
-
-  .skill-item:last-child {
-    margin-bottom: 0;
-  }
-
-  .skill-name {
-    margin-bottom: 5px;
-  }
-
-  .skill-text {
-    font-size: 13px;
-    line-height: 1.7;
-  }
-
-  /* About */
-  .profile {
-    display: block;
-  }
-  .profile-img {
-    width: 150px;
-    margin: 0 auto;
-    margin-bottom: 25px;
-  }
-
-  .profile-body p {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .profile-body p:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  /* フッター */
-  .footer {
-    padding: 20px;
-  }
-
-  /* 下層ページ */
-  .article {
-    padding: 50px 0;
-  }
-
-  .article-body h3 {
+}
+@media screen and (max-width: 450px) {
+  .subtitle {
     font-size: 16px;
-    padding-left: 0.8em;
   }
 
-  .article-body h3:not(:first-child) {
-    margin-top: 30px;
-  }
-
-  .article-body p {
-    font-size: 14px;
-    line-height: 1.7;
-    margin-bottom: 20px;
+  /*  cources */
+  .cources-item {
+    width: 120px;
   }
 }

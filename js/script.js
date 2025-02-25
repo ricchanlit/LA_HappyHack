@@ -13,7 +13,7 @@ $(function () {
   $(".slider").slick({
     arrows: true,
     dots: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
     infinite: true,
   });
 
@@ -42,9 +42,16 @@ $(function () {
     }
   });
 
-  $("#cources").particleground({
-    dotColor: "#ccc",
-    lineColor: "#ddd",
+  $("#cources-js").particleground({
+    dotColor: "#fff",
+    lineColor: "#fff",
     particleRadius: 4,
+    parallax: false,
+    minSpeedX: 0.8,
+    maxSpeedX: 1.6,
+    minSpeedY: 0.8,
+    maxSpeedY: 1.6,
+    particleRadius: 3,
+    lineWidth: 0.5,
   });
 });
